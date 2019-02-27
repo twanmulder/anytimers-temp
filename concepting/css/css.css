@@ -134,11 +134,9 @@ form {
   border-radius: 0 4px 4px 0;
   font-size: 1rem; }
 
-img {
-  width: 100%;
-  height: auto; }
-
 .imglanding {
+  width: 100%;
+  height: auto;
   margin: 4.5rem 0 2rem 0; }
 
 .sign-in-text {
@@ -151,5 +149,31 @@ img {
 
 .forgot-password-text {
   margin: 8rem 0 2rem 0; }
+
+.cross {
+  position: relative;
+  height: 16px; }
+  .cross svg {
+    position: absolute;
+    right: 0; }
+
+.tutorial img {
+  display: block;
+  margin: 150px auto 100px auto; }
+.tutorial .tuttext {
+  text-align: center; }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; }
+  .dots .dot {
+    margin: 0 11px;
+    color: #e4e4e4; }
+    .dots .dot svg {
+      width: 14px;
+      height: 14px; }
+  .dots .active {
+    color: #4dd38b; }
 
 /*# sourceMappingURL=css.css.map */

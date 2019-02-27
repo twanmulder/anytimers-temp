@@ -186,11 +186,9 @@ form {
   border-radius: 0 4px 4px 0;
   font-size: 1rem;
 }
-img{
+.imglanding{
   width: 100%;
   height:auto;
-}
-.imglanding{
   margin: 4.5rem 0 2rem 0;
 }
 
@@ -204,4 +202,44 @@ img{
 }
 .forgot-password-text{
   margin: 8rem 0 2rem 0;
+}
+
+.cross{
+  position: relative;
+  height: 16px;
+
+  svg{
+    position: absolute;
+    right: 0;
+  }
+}
+
+.tutorial{
+  img{
+    display: block;
+    margin: 150px auto 100px auto;
+  }
+  .tuttext{
+    text-align: center;
+  }
+}
+
+.dots{
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
+
+  .dot{
+    margin: 0 11px;
+    color: #e4e4e4;
+
+    svg{
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .active{
+    color:#4dd38b;
+  }
 }
