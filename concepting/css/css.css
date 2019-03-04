@@ -274,10 +274,10 @@ form {
       padding: 20px;
       margin-top: 10px; }
       .anytimers .users .user svg {
+        margin-right: 15px;
         color: red; }
       .anytimers .users .user .username {
-        flex-grow: 3;
-        margin-left: 15px; }
+        flex-grow: 3; }
 
 .userdetail {
   display: flex;
