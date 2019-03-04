@@ -1,3 +1,7 @@
+@import 'reset';
+@import 'colours';
+
+
 body {
   margin: 0;
   font-family: Open Sans;
@@ -8,7 +12,7 @@ body {
 
   background-color: #ddd;
 
-  color: #213A46;
+  color: $font-main;
   letter-spacing: 0.05em;
 }
 
@@ -20,10 +24,10 @@ body {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
   overflow: hidden;
-  background-color: white;
+  background-color: $app-bg;
 
   margin: 15px;
-  padding: 1.5rem;
+  padding: 2.5rem;
   box-sizing: border-box;
 
   h1 {
@@ -116,7 +120,6 @@ form {
 }
 
 .sign-up {
-  margin-top: -20px;
   margin-bottom: 10px;
   padding-top: 0;
   font-size: 0.875rem;
@@ -124,7 +127,7 @@ form {
 .submit-button {
   width: 100%;
   border: 0;
-  background-color: #4dd38b;
+  background-color: $light-green;
 
   padding: 1rem;
   color: white;
@@ -168,7 +171,7 @@ form {
 .login-button{
   width: 100%;
   border: 0;
-  background-color: #4dd38b;
+  background-color: $light-green;
 
   padding: 1rem;
   color: white;
@@ -240,6 +243,65 @@ form {
     }
   }
   .active{
-    color:#4dd38b;
+    color:$light-green;
+  }
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+  .group{
+    display: flex;
+    align-items: center;
+    h2{
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    svg{
+      margin-left: 10px;
+    }
+  }
+
+  .profile{
+    .fa-user-circle{
+      width: 24px;
+      height: 24px;
+    }
+    path{
+      color: $primary-green;
+    }
+  }
+}
+
+.anytimers{
+  margin-top: 60px;
+
+  h3{
+    font-weight: 600;
+  }
+
+  .users{
+    margin-top: 20px;
+    .user{
+      display: flex;
+
+      background-color: white;
+      -webkit-box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
+      box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
+
+      padding: 20px 20px;
+
+      h4:first-child{
+        margin-left: 10px;
+      }
+    }
+  }
+  .give{
+
+  }
+  .receive{
+
   }
 }
