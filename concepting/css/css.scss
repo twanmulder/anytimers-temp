@@ -23,12 +23,14 @@ body {
   border-radius: 4px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
-  overflow: hidden;
+  overflow:hidden;
   background-color: $app-bg;
 
   margin: 15px;
   padding: 2.5rem;
   box-sizing: border-box;
+
+  position: relative;
 
   h1 {
     margin-top: 0;
@@ -107,6 +109,8 @@ form {
 
       padding: 0.25rem;
       padding-left: 0;
+
+      background-color: $app-bg;
 
       &::-webkit-input-placeholder {
         color: #edeeef;
@@ -274,8 +278,32 @@ form {
   }
 }
 
+.drink-bttn{
+  width: 50px;
+  height: 50px;
+
+  background-color: $primary-green;
+
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+
+  .fa-beer{
+    width: 20px;
+    height: 20px;
+
+    margin: 15px 16px;
+
+    color: white;
+  }
+}
+
 .anytimers{
   margin-top: 60px;
+
+  margin-bottom: calc(50px + 2.5rem);
 
   h3{
     font-weight: 600;
@@ -285,16 +313,22 @@ form {
     margin-top: 20px;
     .user{
       display: flex;
+      justify-content: space-between;
 
       background-color: white;
       -webkit-box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
       box-shadow: 0px 28px 91px -26px rgba(0,0,0,0.75);
 
-      padding: 20px 20px;
+      padding: 20px;
+      margin-top: 10px;
 
-      h4:first-child{
-        margin-left: 10px;
+      svg{
+        color: red;
+      }
+      .username{
+        flex-grow: 3;
+        margin-left: 5px;
       }
     }
   }
@@ -303,5 +337,18 @@ form {
   }
   .receive{
 
+  }
+}
+.userdetail{
+  display: flex;
+  justify-content: space-between;
+
+  background-color: white;
+
+  margin-top: -10px;
+  padding: 20px;
+
+  .number{
+    align-self: flex-end;
   }
 }
