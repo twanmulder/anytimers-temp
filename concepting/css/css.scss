@@ -32,6 +32,8 @@ body {
 
   position: relative;
 
+  overflow-y: scroll;
+
   h1 {
     margin-top: 0;
     font-weight: 300;
@@ -282,13 +284,13 @@ form {
   width: 50px;
   height: 50px;
 
+  margin: 30rem 2.5rem 0 14.5rem;
+
   background-color: $primary-green;
 
   border-radius: 50%;
 
-  position: absolute;
-  bottom: 2.5rem;
-  right: 2.5rem;
+  position: fixed;
 
   .fa-beer{
     width: 20px;
@@ -300,9 +302,11 @@ form {
   }
 }
 
-.anytimers{
+#anytimers{
   margin-top: 60px;
+}
 
+.anytimers{
   margin-bottom: calc(50px + 2.5rem);
 
   h3{
@@ -328,7 +332,7 @@ form {
       }
       .username{
         flex-grow: 3;
-        margin-left: 5px;
+        margin-left: 15px;
       }
     }
   }
@@ -339,6 +343,7 @@ form {
 
   }
 }
+
 .userdetail{
   display: flex;
   justify-content: space-between;
@@ -348,7 +353,13 @@ form {
   margin-top: -10px;
   padding: 20px;
 
-  .number{
-    align-self: flex-end;
+  &:last-child{
+    -webkit-box-shadow: 0px 20px 20px -20px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 20px 20px -20px rgba(0,0,0,0.2);
+    box-shadow: 0px 20px 20px -20px rgba(0,0,0,0.2);
+  }
+
+  h5{
+    font-size: 80%;
   }
 }
