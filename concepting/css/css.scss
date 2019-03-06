@@ -355,7 +355,7 @@ form {
   width: 50px;
   height: 50px;
 
-  margin: 29rem 2.5rem 0 10.5rem;
+  margin: 29.5rem 2.5rem 0 10rem;
 
   background-color: $red;
 
@@ -449,18 +449,77 @@ form {
   width: 100%;
   img{
     display: block;
-    margin: 80px auto 55px auto;
+    margin: 60px auto 55px auto;
   }
 
   .amount{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 4rem;
+    margin-bottom: 15px;
+
+    .number{
+      height: 2rem;
+      width: 2rem;
+
+      background-color: white;
+
+      border-radius: 4px;
+
+      p{
+        height: 100%;
+
+        text-align:center;
+        top: 6px;
+        position: relative;
+
+        font-size: 1.2rem;
+      }
+    }
 
     .minus, .plus{
-      
+
     }
   }
 }
 
 .add, .drink{
   width: 100%;
+
+  select{
+    margin-bottom: 25px;
+
+    border-color: transparent;
+    width: 100%;
+  }
+}
+
+.anytime_from, .anytime_to{
+  margin-bottom: 15px;
+}
+
+.description{
+  form{
+    margin-top: 15px;
+  }
+
+  input:first-child{
+    width: 100%;
+
+    border-color: transparent;
+
+    &::placeholder{
+      color: $font-light;
+    }
+  }
+
+  input:nth-child(2){
+    margin-top: 10px;
+  }
+}
+
+#description_form{
+  margin: 15px 0 15px 0;
 }
