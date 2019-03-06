@@ -67,11 +67,12 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow-y: scroll; }
+  .app form:nth-child(2) {
+    margin-top: 2rem; }
   .app h1 {
     margin-top: 0;
     font-weight: 300;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     vertical-align: middle; }
@@ -201,7 +202,8 @@ form {
 
 .cross {
   position: relative;
-  height: 16px; }
+  height: 16px;
+  display: flex; }
   .cross svg {
     position: absolute;
     right: 0; }
@@ -242,11 +244,50 @@ form {
   .header .profile path {
     color: #31b16c; }
 
-.drink-bttn {
+.beer-bttn {
   width: 50px;
   height: 50px;
   margin: 30rem 2.5rem 0 14.5rem;
   background-color: #31b16c;
+  border-radius: 50%;
+  position: fixed; }
+  .beer-bttn .fa-beer {
+    width: 20px;
+    height: 20px;
+    margin: 15px 16px;
+    color: white; }
+
+.cross-bttn {
+  width: 50px;
+  height: 50px;
+  margin: 30rem 2.5rem 0 14.5rem;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+  position: fixed; }
+  .cross-bttn .fa-times {
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    color: rgba(0, 0, 0, 0.5); }
+
+.add-bttn {
+  width: 50px;
+  height: 50px;
+  margin: 26rem 2.5rem 0 12.5rem;
+  background-color: #31b16c;
+  border-radius: 50%;
+  position: fixed; }
+  .add-bttn .fa-plus {
+    width: 20px;
+    height: 20px;
+    margin: 15px 15px;
+    color: white; }
+
+.drink-bttn {
+  width: 50px;
+  height: 50px;
+  margin: 29rem 2.5rem 0 10.5rem;
+  background-color: #ff5b5b;
   border-radius: 50%;
   position: fixed; }
   .drink-bttn .fa-beer {
@@ -291,5 +332,30 @@ form {
     box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.2); }
   .userdetail h5 {
     font-size: 80%; }
+
+.overlay {
+  position: absolute;
+  /* Sit on top of the page content */
+  display: block;
+  /* Hidden by default */
+  width: 360px;
+  /* Full width (cover the whole page) */
+  height: 960px;
+  /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */ }
+
+.update {
+  width: 100%; }
+  .update img {
+    display: block;
+    margin: 80px auto 55px auto; }
+  .update .amount {
+    display: flex; }
+
+.add, .drink {
+  width: 100%; }
 
 /*# sourceMappingURL=css.css.map */
