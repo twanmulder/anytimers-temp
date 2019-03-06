@@ -107,13 +107,13 @@
       <img src="https:///via.placeholder.com/100.jpg" alt="placeholder">
       <div class="add">
         <div class="amount">
-          <div class="minus">
+          <div class="minus" onClick="decreaseAddValue()">
             <i class="fas fa-minus"></i>
           </div>
           <div class="number">
-            <p>0</p>
+            <p id="addValue">0</p>
           </div>
-          <div class="plus">
+          <div class="plus" onClick="increaseAddValue()">
             <i class="fas fa-plus"></i>
           </div>
         </div>
@@ -157,13 +157,13 @@
       <img src="https:///via.placeholder.com/100.jpg" alt="placeholder">
       <div class="drink">
         <div class="amount">
-          <div class="minus">
+          <div class="minus" onClick="decreaseDrinkValue()">
             <i class="fas fa-minus"></i>
           </div>
           <div class="number">
-            <p>0</p>
+            <p id="drinkValue">0</p>
           </div>
-          <div class="plus">
+          <div class="plus" onclick="increaseDrinkValue()">
             <i class="fas fa-plus"></i>
           </div>
         </div>
