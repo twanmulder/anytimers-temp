@@ -361,7 +361,8 @@ form {
 
   margin: 30rem 2.5rem 0 14.5rem;
 
-  background-color: $red;
+  background-color: $primary-green;
+  transition: display 2s;
 
   border-radius: 50%;
 
@@ -527,4 +528,9 @@ form {
 
 #description_form{
   margin: 15px 0 15px 0;
+}
+
+// TEST css
+#testadd, #testdrink{
+  display: none;
 }
