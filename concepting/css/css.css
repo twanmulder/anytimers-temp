@@ -53,7 +53,8 @@ body {
   align-items: center;
   background-color: #ddd;
   color: #213A46;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  line-height: 1.4; }
 
 .app {
   width: 360px;
@@ -217,7 +218,10 @@ form {
 .dots {
   display: flex;
   justify-content: center;
-  margin-top: 100px; }
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem; }
   .dots .dot {
     margin: 0 11px;
     color: #e4e4e4; }
