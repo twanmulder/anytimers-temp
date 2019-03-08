@@ -1,0 +1,29 @@
+Documentation for anytimers.nl
+├ ─ └
+
+
+
+
+//Website structure - pages
+
+index
+├── Landing
+     ├── Login
+          ├── Password forgotten
+     ├── Register
+          ├── Tutorial 1
+          ├── Tutorial 2
+          ├── Tutorial 3
+          ├── Tutorial 4
+├── Add anytimer
+├── Drink anytimer
+├──
+├──
+├──
+├──
+├──
+
+
+
+
+//Components
