@@ -96,9 +96,7 @@ form {
     display: none; }
   form .wrapper {
     width: 300px;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #eceeef; }
+    margin-bottom: 1rem; }
   form label {
     display: block; }
   form .input-type {
