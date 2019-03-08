@@ -14,6 +14,22 @@ function off() {
   document.getElementById("drink-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
   document.getElementById("drink-bttn").style.backgroundColor = "#31b16c";
   document.getElementById("beer-bttn").style.display = "block";
+
+  //Close profileDropdown
+  document.getElementById("profile").setAttribute("style", "color: #31b16c; background-color: transparent; border-radius: 0;");
+  document.getElementById("profileDropdown").setAttribute("style", "opacity: 0; visibility: hidden; transform: translateY(-2%);");
+}
+
+//Open profile dropdown
+function profileon() {
+  document.getElementById("overlay").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  document.getElementById("profile").setAttribute("style", "color: rgb(255, 255, 255); background-color: white; border-radius: 4px 4px 0 0;");
+  document.getElementById("profileDropdown").setAttribute("style", "opacity: 1; visibility: visible; transform: translateY(0%);");
+}
+
+//Close profile dropdown
+function profileoff() {
+  document.getElementById("overlay").style.backgroundColor = "transparent";
 }
 
 // Opening the add page

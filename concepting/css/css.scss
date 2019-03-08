@@ -262,6 +262,53 @@ form {
   display: flex;
   justify-content: space-between;
 
+  .profileDropdown{
+    position: absolute;
+
+    color: $font-main;
+    background-color: white;
+    border-radius: 4px 0 4px 4px;
+
+    margin-top: 24px;
+    padding: 1rem;
+
+    width: calc(100% - 7rem);
+
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2%);
+    transition: all .2s;
+
+    .profileDetail{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      margin-top: 1rem;
+
+      text-align: center;
+
+      .profileAvatar{
+        svg{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .profileName{
+        font-weight: bold;
+        margin-top: 0.5rem;
+      }
+      ul{
+        margin-top: 0.5rem;
+
+        li{
+          margin: 5px 0 5px 0;
+        }
+      }
+    }
+  }
+
   .group{
     display: flex;
     align-items: center;
@@ -274,13 +321,19 @@ form {
     }
   }
 
+  #profile{
+    color: $primary-green;
+  }
+
   .profile{
+    position: relative;
+
     .fa-user-circle{
       width: 24px;
       height: 24px;
     }
     path{
-      color: $primary-green;
+      // color: $primary-green;
     }
   }
 }

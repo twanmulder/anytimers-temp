@@ -232,6 +232,35 @@ form {
 .header {
   display: flex;
   justify-content: space-between; }
+  .header .profileDropdown {
+    position: absolute;
+    color: #213A46;
+    background-color: white;
+    border-radius: 4px 0 4px 4px;
+    margin-top: 24px;
+    padding: 1rem;
+    width: calc(100% - 7rem);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2%);
+    transition: all .2s; }
+    .header .profileDropdown .profileDetail {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 1rem;
+      text-align: center; }
+      .header .profileDropdown .profileDetail .profileAvatar svg {
+        width: 100px;
+        height: 100px; }
+      .header .profileDropdown .profileDetail .profileName {
+        font-weight: bold;
+        margin-top: 0.5rem; }
+      .header .profileDropdown .profileDetail ul {
+        margin-top: 0.5rem; }
+        .header .profileDropdown .profileDetail ul li {
+          margin: 5px 0 5px 0; }
   .header .group {
     display: flex;
     align-items: center; }
@@ -240,11 +269,13 @@ form {
       font-weight: bold; }
     .header .group svg {
       margin-left: 10px; }
-  .header .profile .fa-user-circle {
-    width: 24px;
-    height: 24px; }
-  .header .profile path {
+  .header #profile {
     color: #31b16c; }
+  .header .profile {
+    position: relative; }
+    .header .profile .fa-user-circle {
+      width: 24px;
+      height: 24px; }
 
 .bttn {
   transition: margin 0.3s, background-color 0.2s; }
