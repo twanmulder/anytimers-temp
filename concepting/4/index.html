@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=200, initial-scale=1">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js">
 
   </script>
  </head>
@@ -16,99 +15,102 @@
 <body>
 
   <div class="app">
-    <div id="overlay" class="overlay" onClick="off(), testaddoff(), testdrinkoff()">
+    <div class="wrapper">
+      <div id="overlay" class="overlay" onClick="off(), testaddoff(), testdrinkoff()">
 
-    </div>
-    <div class="header">
-      <div class="group">
-        <h2>Fashion Bois</h2>
-        <i class="fas fa-chevron-down"></i>
       </div>
-      <div id="profile" class="profile" onClick="profileon()">
-        <i class="fas fa-user-circle"></i>
-      </div>
-      <div id="profileDropdown" class="profileDropdown">
-        <div class="profileDetail">
-          <div class="profileAvatar">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <div class="profileName">
-            <p>Twan Mulder</p>
-          </div>
-          <ul>
-            <li>Add friends</li>
-            <li>Join group</li>
-            <li>Create group</li>
-            <li>Settings</li>
-          </ul>
+      <div class="header">
+        <div class="group">
+          <h2>Fashion Bois</h2>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="profile" class="profile" onClick="profileAsideOpen()">
+          <i class="fas fa-user-circle"></i>
         </div>
       </div>
-    </div>
 
-    <div id="cross-bttn" onClick="off(), testaddoff(), testdrinkoff()" class="cross-bttn bttn">
-      <i class="fas fa-times"></i>
-    </div>
-    <div id="add-bttn" class="add-bttn bttn" onClick="testadd()">
-      <i class="fas fa-plus"></i>
-    </div>
-    <div id="drink-bttn" class="beer-bttn bttn" onClick="testdrink()">
-      <i class="fas fa-beer"></i>
-    </div>
-    <div id="beer-bttn" class="drink-bttn bttn" onClick="on()">
-      <i class="fas fa-beer"></i>
-    </div>
+      <div id="cross-bttn" onClick="off(), testaddoff(), testdrinkoff()" class="cross-bttn bttn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div id="add-bttn" class="add-bttn bttn" onClick="testadd()">
+        <i class="fas fa-plus"></i>
+      </div>
+      <div id="drink-bttn" class="beer-bttn bttn" onClick="testdrink()">
+        <i class="fas fa-beer"></i>
+      </div>
+      <div id="beer-bttn" class="drink-bttn bttn" onClick="on()">
+        <i class="fas fa-beer"></i>
+      </div>
 
 
-    <div id="anytimers" class="anytimers">
-      <div class="anytimers give">
-        <h3>Anytimers to give out</h3>
-        <div class="users">
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Boyen de Leeuw</h4>
-            <h4 class="number">12</h4>
-          </div>
-          <div class="userlist">
-            <div class="userdetail">
-              <h5>Vijf cheeseburgers in z'n nek duwen.</h5>
-              <h5 class="number">5</h5>
+      <div id="anytimers" class="anytimers">
+        <div class="anytimers give">
+          <h3>Anytimers to give out</h3>
+          <div class="users">
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Boyen de Leeuw</h4>
+              <h4 class="number">12</h4>
             </div>
-            <div class="userdetail">
-              <h5>In de gracht springen met al z'n kleren aan.</h5>
-              <h5 class="number">7</h5>
+            <div class="userlist">
+              <div class="userdetail">
+                <h5>Vijf cheeseburgers in z'n nek duwen.</h5>
+                <h5 class="number">5</h5>
+              </div>
+              <div class="userdetail">
+                <h5>In de gracht springen met al z'n kleren aan.</h5>
+                <h5 class="number">7</h5>
+              </div>
+            </div>
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Daan Heijnen</h4>
+              <h4 class="number">7</h4>
+            </div>
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Tijs Ots</h4>
+              <h4 class="number">9</h4>
             </div>
           </div>
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Daan Heijnen</h4>
-            <h4 class="number">7</h4>
-          </div>
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Tijs Ots</h4>
-            <h4 class="number">9</h4>
+        </div>
+        <div class="anytimers receive">
+          <h3>Anytimers to receive</h3>
+          <div class="users">
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Boyen de Leeuw</h4>
+              <h4 class="number">4</h4>
+            </div>
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Daan Heijnen</h4>
+              <h4 class="number">6</h4>
+            </div>
+            <div class="user">
+              <i class="fas fa-circle"></i>
+              <h4 class="username">Tijs Ots</h4>
+              <h4 class="number">14</h4>
+            </div>
           </div>
         </div>
       </div>
-      <div class="anytimers receive">
-        <h3>Anytimers to receive</h3>
-        <div class="users">
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Boyen de Leeuw</h4>
-            <h4 class="number">4</h4>
-          </div>
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Daan Heijnen</h4>
-            <h4 class="number">6</h4>
-          </div>
-          <div class="user">
-            <i class="fas fa-circle"></i>
-            <h4 class="username">Tijs Ots</h4>
-            <h4 class="number">14</h4>
-          </div>
+
+    </div>
+    <div id="profileAside" class="profileAside">
+      <div class="profileDetail">
+        <div class="profileAvatar">
+          <i class="fas fa-user-circle"></i>
         </div>
+        <div class="profileName">
+          <p>Twan Mulder</p>
+        </div>
+        <ul>
+          <li>Add friends</li>
+          <li>Join group</li>
+          <li>Create group</li>
+          <li>Settings</li>
+        </ul>
       </div>
     </div>
 

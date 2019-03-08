@@ -1,4 +1,4 @@
-@import 'reset';
+  @import 'reset';
 @import 'colours';
 
 body {
@@ -36,6 +36,50 @@ body {
 
   form:nth-child(2){
     margin-top: 2rem;
+  }
+
+  .profileAside{
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all 1s;
+
+    background-color: white;
+    width: 12.5rem;
+    height: 100%;
+
+    padding: 1rem;
+
+    transform: translateX(calc(360px - 2.5rem));
+
+    .profileDetail{
+      text-align: center;
+
+      .profileAvatar{
+        margin-top: 1rem;
+
+        svg{
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .profileName{
+        margin-top: 0.5rem;
+        font-weight: bold;
+      }
+
+      ul{
+        margin-top: 1rem;
+
+        li{
+          margin: 0.5rem 0;
+        }
+      }
+    }
   }
 
   h1 {
@@ -261,53 +305,6 @@ form {
 .header{
   display: flex;
   justify-content: space-between;
-
-  .profileDropdown{
-    position: absolute;
-
-    color: $font-main;
-    background-color: white;
-    border-radius: 4px 0 4px 4px;
-
-    margin-top: 24px;
-    padding: 1rem;
-
-    width: calc(100% - 7rem);
-
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-2%);
-    transition: all .2s;
-
-    .profileDetail{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      margin-top: 1rem;
-
-      text-align: center;
-
-      .profileAvatar{
-        svg{
-          width: 100px;
-          height: 100px;
-        }
-      }
-      .profileName{
-        font-weight: bold;
-        margin-top: 0.5rem;
-      }
-      ul{
-        margin-top: 0.5rem;
-
-        li{
-          margin: 5px 0 5px 0;
-        }
-      }
-    }
-  }
 
   .group{
     display: flex;
