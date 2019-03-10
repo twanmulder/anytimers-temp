@@ -354,6 +354,9 @@ form {
       .anytimers .users .user .username {
         flex-grow: 3; }
 
+#userList {
+  display: none; }
+
 .userdetail {
   display: flex;
   justify-content: space-between;
@@ -367,10 +370,10 @@ form {
   .userdetail h5 {
     font-size: 80%; }
 
-.overlay {
+#overlay {
   position: absolute;
   /* Sit on top of the page content */
-  display: block;
+  display: none;
   /* Hidden by default */
   width: 360px;
   /* Full width (cover the whole page) */

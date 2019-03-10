@@ -1,4 +1,4 @@
-  @import 'reset';
+@import 'reset';
 @import 'colours';
 
 body {
@@ -470,6 +470,10 @@ form {
   }
 }
 
+#userList{
+  display: none;
+}
+
 .userdetail{
   display: flex;
   justify-content: space-between;
@@ -490,9 +494,9 @@ form {
   }
 }
 
-.overlay {
+#overlay {
   position: absolute; /* Sit on top of the page content */
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   width: 360px; /* Full width (cover the whole page) */
   height: 960px; /* Full height (cover the whole page) */
   top: 0;

@@ -1,28 +1,33 @@
-// Opening the drink buttons
-function on() {
-  document.getElementById("overlay").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-  document.getElementById("add-bttn").style.margin = "26rem 2.5rem 0 12.5rem";
-  document.getElementById("drink-bttn").style.margin = "29.5rem 2.5rem 0 10rem";
-  document.getElementById("drink-bttn").style.backgroundColor = "rgb(255, 91, 91)";
-  document.getElementById("beer-bttn").style.display = "none";
-}
-
-// Closing the drink buttons
-function off() {
-  document.getElementById("overlay").style.backgroundColor = "transparent";
+function closeButtons() {
   document.getElementById("add-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
   document.getElementById("drink-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
   document.getElementById("drink-bttn").style.backgroundColor = "#31b16c";
   document.getElementById("beer-bttn").style.display = "block";
+}
 
+// Opening the drink buttons when pressing the beer button
+function on() {
+  overlayToggle();
+  document.getElementById("add-bttn").style.margin = "26rem 2.5rem 0 12.5rem";
+  document.getElementById("drink-bttn").style.margin = "29.5rem 2.5rem 0 10rem";
+  document.getElementById("drink-bttn").style.backgroundColor = "rgb(255, 91, 91)";
+  document.getElementById("beer-bttn").style.display = "none";
+  document.getElementById("profile").style.color = "rgba(0, 0, 0, 0.5)";
+}
+
+// Closing the drink buttons when pressing the cross
+function off() {
+  closeButtons();
+  overlayToggle();
+  document.getElementById("profile").style.color = "#31b16c";
   //Closing profileAside
   document.getElementById("profileAside").setAttribute("style", "transform: translateX(calc(360px - 2.5rem));");
 }
 
 //Opening profile profileAsideOpen
 function profileAsideOpen() {
+  overlayToggle();
   document.getElementById("profileAside").setAttribute("style", "transform: translateX(calc(360px - 17rem));");
-  document.getElementById("overlay").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 }
 
 // Opening the add page
@@ -32,12 +37,10 @@ function testadd() {
 
 // Closing the add page + button update
 function testaddoff() {
+  closeButtons();
+  overlayToggle();
   document.getElementById("testadd").style.display = "none";
-  document.getElementById("overlay").style.backgroundColor = "transparent";
-  document.getElementById("add-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
-  document.getElementById("drink-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
-  document.getElementById("drink-bttn").style.backgroundColor = "#31b16c";
-  document.getElementById("beer-bttn").style.display = "block";
+  document.getElementById("profile").style.color = "#31b16c";
 }
 
 // Opening the drink page
@@ -47,12 +50,10 @@ function testdrink() {
 
 // Closing the drink page + button update
 function testdrinkoff() {
+  closeButtons();
+  overlayToggle();
   document.getElementById("testdrink").style.display = "none";
-  document.getElementById("overlay").style.backgroundColor = "transparent";
-  document.getElementById("add-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
-  document.getElementById("drink-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
-  document.getElementById("drink-bttn").style.backgroundColor = "#31b16c";
-  document.getElementById("beer-bttn").style.display = "block";
+  document.getElementById("profile").style.color = "#31b16c";
 }
 
 
@@ -87,3 +88,20 @@ function decreaseDrinkValue() {
     document.getElementById('drinkValue').innerHTML = score;
   }
 }
+
+//Overlay toggle
+function overlayToggle() {
+  var x = document.getElementById('overlay');
+  if (x.style.display === "block") {
+    x.setAttribute("style", "background-color: transparent; display: none;");
+  } else{
+    x.setAttribute("style", "background-color: rgba(0, 0, 0, 0.5); display: block;");
+  }
+}
+
+//Simple jQuery slideToggle to show anytimer details
+$(document).ready(function(){
+  $(".user").click(function(){
+    $(".userList").slideToggle("slow, linear");
+  });
+});
