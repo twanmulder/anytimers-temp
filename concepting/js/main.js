@@ -1,6 +1,7 @@
+//Function which closes the buttons
 function closeButtons() {
-  document.getElementById("add-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
-  document.getElementById("drink-bttn").style.margin = "30rem 2.5rem 0 14.5rem";
+  document.getElementById("add-bttn").style.transform = "translate(0,0)";
+  document.getElementById("drink-bttn").style.transform = "translate(0,0)";
   document.getElementById("drink-bttn").style.backgroundColor = "#31b16c";
   document.getElementById("beer-bttn").style.display = "block";
 }
@@ -8,8 +9,8 @@ function closeButtons() {
 // Opening the drink buttons when pressing the beer button
 function on() {
   overlayToggle();
-  document.getElementById("add-bttn").style.margin = "26rem 2.5rem 0 12.5rem";
-  document.getElementById("drink-bttn").style.margin = "29.5rem 2.5rem 0 10rem";
+  document.getElementById("add-bttn").style.transform = "translate(-30px, -60px)";
+  document.getElementById("drink-bttn").style.transform = "translate(-65px, -10px)";
   document.getElementById("drink-bttn").style.backgroundColor = "rgb(255, 91, 91)";
   document.getElementById("beer-bttn").style.display = "none";
   document.getElementById("profile").style.color = "rgba(0, 0, 0, 0.5)";

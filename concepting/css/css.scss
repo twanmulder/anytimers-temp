@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    transition: all 1s;
+    transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
 
     background-color: white;
     width: 12.5rem;
@@ -336,14 +336,16 @@ form {
 }
 
 .bttn{
-  transition: margin 0.3s, background-color 0.2s;
+  transition: all 0.2s;
 }
 
 .beer-bttn{
   width: 50px;
   height: 50px;
 
-  margin: 30rem 2.5rem 0 14.5rem;
+  bottom: 10vh;
+  right: 2.5rem;
+  // margin: 30rem 2.5rem 0 14.5rem;
 
   background-color: $primary-green;
 
@@ -365,7 +367,10 @@ form {
   width: 50px;
   height: 50px;
 
-  margin: 30rem 2.5rem 0 14.5rem;
+
+  bottom: 10vh;
+  right: 2.5rem;
+  // margin: 30rem 2.5rem 0 14.5rem;
 
   background-color: rgb(208, 208, 208);
 
@@ -387,7 +392,9 @@ form {
   width: 50px;
   height: 50px;
 
-  margin: 30rem 2.5rem 0 14.5rem;
+  bottom: 10vh;
+  right: 2.5rem;
+  // margin: 30rem 2.5rem 0 14.5rem;
 
   background-color: $primary-green;
 
@@ -409,7 +416,9 @@ form {
   width: 50px;
   height: 50px;
 
-  margin: 30rem 2.5rem 0 14.5rem;
+  bottom: 10vh;
+  right: 2.5rem;
+  // margin: 30rem 2.5rem 0 14.5rem;
 
   background-color: $primary-green;
   transition: display 2s;
