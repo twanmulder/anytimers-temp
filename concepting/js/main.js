@@ -27,7 +27,7 @@ function off() {
 //Opening profile profileAsideOpen
 function profileAsideOpen() {
   overlayToggle();
-  document.getElementById("profileAside").setAttribute("style", "transform: translateX(calc(360px - 17rem));");
+  document.getElementById("profileAside").setAttribute("style", "right: 0;");
 }
 
 // Opening the add page

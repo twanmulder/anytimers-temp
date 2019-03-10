@@ -17,8 +17,8 @@ body {
 }
 
 .app {
-  width: 360px;
-  height: 640px;
+  width: 100vw;
+  height: 100vh;
 
   border-radius: 4px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -26,7 +26,6 @@ body {
   overflow:hidden;
   background-color: $app-bg;
 
-  margin: 15px;
   padding: 2.5rem;
   box-sizing: border-box;
 
@@ -41,6 +40,7 @@ body {
   .profileAside{
     position: absolute;
     top: 0;
+    right: -15rem;
 
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
 
     padding: 1rem;
 
-    transform: translateX(calc(360px - 2.5rem));
+    // transform: translateX(calc(360px - 2.5rem));
 
     .profileDetail{
       text-align: center;
@@ -497,7 +497,7 @@ form {
 #overlay {
   position: absolute; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 360px; /* Full width (cover the whole page) */
+  width: 100vw; /* Full width (cover the whole page) */
   height: 960px; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
