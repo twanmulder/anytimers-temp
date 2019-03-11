@@ -102,7 +102,7 @@ function overlayToggle() {
 
 //Simple jQuery slideToggle to show anytimer details
 $(document).ready(function(){
-  $(".user").click(function(){
-    $(".userList").slideToggle("slow, linear");
+  $(".user").on( 'touchstart', function(){
+    $(".userList").slideToggle("fast, linear");
   });
 });
