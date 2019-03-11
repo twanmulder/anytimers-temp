@@ -15,16 +15,37 @@
 
 <body>
 
-  <div class="app">
+  <div id="app" class="app">
     <div class="wrapper">
       <div id="overlay" class="overlay" onClick="off(), testaddoff(), testdrinkoff()">
 
       </div>
       <div class="header">
         <div class="group">
-          <h2>Fashion Bois</h2>
-          <i class="fas fa-chevron-down"></i>
+          <div class="groupSelected">
+            <h2>All</h2>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="groupList">
+            <div class="groupInfo">
+              <h4>Select group (or all)</h4>
+            </div>
+            <div class="groupItem active">
+              <h3>All</h3>
+            </div>
+            <div class="groupItem">
+              <h3>Fashion Bois</h3>
+            </div>
+            <div class="groupItem">
+              <h3>Mannenavond</h3>
+            </div>
+            <div class="groupItem">
+              <h3>Redactiecommissie</h3>
+            </div>
+          </div>
+
         </div>
+
         <div id="profile" class="profile" onClick="profileAsideOpen()">
           <i class="fas fa-user-circle"></i>
         </div>

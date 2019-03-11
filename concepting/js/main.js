@@ -22,7 +22,7 @@ function off() {
   overlayToggle();
   document.getElementById("profile").style.color = "#31b16c";
   //Closing profileAside
-  document.getElementById("profileAside").setAttribute("style", "transform: translateX(calc(360px - 2.5rem));");
+  document.getElementById("profileAside").setAttribute("style", "right: -15rem;");
 }
 
 //Opening profile profileAsideOpen
@@ -34,6 +34,7 @@ function profileAsideOpen() {
 // Opening the add page
 function testadd() {
   document.getElementById("testadd").style.display = "block";
+  document.getElementById("app").style.display = "none";
 }
 
 // Closing the add page + button update
@@ -41,12 +42,14 @@ function testaddoff() {
   closeButtons();
   overlayToggle();
   document.getElementById("testadd").style.display = "none";
+  document.getElementById("app").style.display = "block";
   document.getElementById("profile").style.color = "#31b16c";
 }
 
 // Opening the drink page
 function testdrink() {
   document.getElementById("testdrink").style.display = "block";
+  document.getElementById("app").style.display = "none";
 }
 
 // Closing the drink page + button update
@@ -54,6 +57,7 @@ function testdrinkoff() {
   closeButtons();
   overlayToggle();
   document.getElementById("testdrink").style.display = "none";
+  document.getElementById("app").style.display = "block";
   document.getElementById("profile").style.color = "#31b16c";
 }
 
@@ -103,6 +107,14 @@ function overlayToggle() {
 //Simple jQuery slideToggle to show anytimer details
 $(document).ready(function(){
   $(".user").on( 'touchstart', function(){
-    $(".userList").slideToggle("fast, linear");
+    $(".userList").slideToggle("fast, easeOutQuart");
+  });
+});
+
+
+//jQuery slideToggle for picking a group
+$(document).ready(function(){
+  $(".group").on( 'touchstart', function(){
+    $(".groupList").slideToggle("fast, easeOutQuart");
   });
 });
