@@ -3,6 +3,7 @@
 @import 'components/_buttons.scss';
 @import 'components/_header.scss';
 
+
 body {
   margin: 0;
   font-family: Open Sans;
@@ -462,3 +463,6 @@ form {
 #testadd, #testdrink{
   display: none;
 }
+
+
+@import 'mediaqueries';

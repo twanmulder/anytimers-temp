@@ -105,16 +105,25 @@ function overlayToggle() {
 }
 
 //Simple jQuery slideToggle to show anytimer details
+var flag = false;
 $(document).ready(function(){
-  $(".user").on( 'touchstart', function(){
-    $(".userList").slideToggle("fast, easeOutQuart");
+  $(".user").on( 'touchstart click', function(){
+    if (!flag) {
+      flag = true;
+      setTimeout(function(){flag = false;}, 100);
+      $(".userList").slideToggle("fast, easeOutQuart");
+    }
   });
 });
 
 
 //jQuery slideToggle for picking a group
 $(document).ready(function(){
-  $(".group").on( 'touchstart', function(){
+  $(".group").on( 'touchstart click', function(){
+    if (!flag) {
+      flag = true;
+      setTimeout(function(){flag = false;}, 100);
     $(".groupList").slideToggle("fast, easeOutQuart");
+  }
   });
 });
